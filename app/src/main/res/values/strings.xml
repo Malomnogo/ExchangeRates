@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ExchangeRates</string>
+    <string name="title_popular">Popular</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="retry">Retry</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="alphabet">Alphabet</string>
+    <string name="value">Value</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+</resources>

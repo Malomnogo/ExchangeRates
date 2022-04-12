@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/base_dialog_width"
+    android:layout_height="@dimen/base_dialog_height"
+    android:layout_gravity="center">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/currenciesList"
+        android:layout_width="@dimen/base_dialog_width"
+        android:layout_height="280dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_symbol" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_space"
+        android:layout_marginEnd="@dimen/base_space"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/currenciesList"
+        app:layout_constraintStart_toStartOf="@+id/currenciesList"
+        app:layout_constraintTop_toBottomOf="@+id/currenciesList" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
